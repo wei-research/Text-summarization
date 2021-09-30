@@ -42,33 +42,40 @@ To run the model, you need to install the following dependancies in your virtual
 
 ###  Step 1. Start Django
 
-* Navigate to .  PROJECT_PEGASUS/NLPSeq folder
+* Navigate to .PROJECT_PEGASUS/NLPSeq folder
 * run commands: 
 ```
 $ python manage.py runserver
 ```
-......
+<br>
 The webpage will start at django server with private address at: http://127.0.0.1:8000/
 
-HomePage, where you can enter a url or plain text for summarization:
+#### HomePage: (Where you can enter a url or plain text for summarization)
 
 ![image](https://user-images.githubusercontent.com/71624659/135486669-cd4c9943-7c32-4d28-91b7-45d1f114ea48.png)
 
-Result Page with Texts input by user, and the Abstractive summary with Pegasus: 
+#### Result Page: (With Texts input by user, and the Abstractive summary with Pegasus)
 ![image](https://user-images.githubusercontent.com/71624659/135486817-1ee2b1c3-98d0-4e64-98ea-50cffaec0615.png)
 
-Result with Genisum summarization function for comparison:
+#### Result Page: (with Genisum summarization function for comparison)
 ![image](https://user-images.githubusercontent.com/71624659/135487076-df8a40ab-3103-4042-a077-c2895cae900e.png)
 
+<br>
 
 ## Run Inference on your own device with pretrained model.
 
-.....
+### Step 1: Navigate to .PROJECT_PEGASUS/demo_master directory
 
-### Download model variables: 
-Need to download the model variables and save the variable folder under /model directory
+<br>
+
+### Step 2: Download model variables: 
+
+Need to download the model variables and save the variable folder under demo_master/model directory
 
 https://drive.google.com/file/d/1ZF2qO6bAnsTF2LSndLMir3e7NrlFL288/view
+
+### Step 3 
+   To be completed..... 
 
 ## Contact 
 
