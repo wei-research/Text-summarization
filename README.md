@@ -37,7 +37,7 @@ To run the model, you need to install the following dependancies in your virtual
 * tfds-nightly
 * numpy
 
-## 1. Use Tex Summarizer on Web page
+## Use Tex Summarizer on Web page
 
 ###  Step 1. Start Django
 
@@ -48,7 +48,7 @@ $ python manage.py runserver
 ```
 ......
 
-## 2. Run Inference on your own device with pretrained model.
+## Run Inference on your own device with pretrained model.
 
 .....
 
