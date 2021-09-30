@@ -1,9 +1,10 @@
 
+
 # Abstractive Text Summarization 
 
-Deliverable of UTS 32933 Research Project Spring 2021
+Deliverable of UTS 32933 Research Project, Spring 2021
 
-supervisor: [Dr. Wei Liu](https://www.uts.edu.au/staff/wei.liu)
+Supervisor: [Dr. Wei Liu](https://www.uts.edu.au/staff/wei.liu)
 
 
 ## What is it
