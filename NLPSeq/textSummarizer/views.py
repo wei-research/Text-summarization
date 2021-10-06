@@ -9,9 +9,6 @@ from gensim.summarization import summarize
 import re
 ### using the hugging face Pegasus pre-trained model for inference
 
-API_URL = "https://api-inference.huggingface.co/models/google/pegasus-xsum"
-headers = {"Authorization": "Bearer api_IYoGdhhHfQfojxgYNLQLtUnbcAyTEhWxLy"}
-
 
 def result(request):
     if(request.method =="POST"):
