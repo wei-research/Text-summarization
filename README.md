@@ -25,38 +25,38 @@ Supervisor: [Professor. Wei Liu](https://www.uts.edu.au/staff/wei.liu)
 To see the working demo, click on the links
 - <a href="#" target="_blank">The video on Demo will be updated shortly</a>
 
+
+
+## Overview of the Web Application
+
+#### HomePage: (Introduction of the web application and how it works)
+
+
+#### Text Summarizer page: (Where the model takes user input and start summarization)
+
+#### Result Page: (Will display Texts input by user, Abstractive and Extractive summaries)
+
+
+<br>
+
 ## Dependancies
 
 The automatic text summarizer is deployed with Django framework. 
 
-To run the model on your own device, you need to install the following dependancies in your virtual enrivonment: 
+To run and modify the model on your own device, you need to install the following dependancies in your virtual enrivonment: 
 * Django == 2.2
 * python >3.6
 * gensim
 * beautifulsoup4
 
-
-## Use Tex Summarizer on Web page
-
-###  Step 1. Start Django
-
-* Navigate to .PROJECT_PEGASUS/NLPSeq folder
-* run commands: 
+Navigate to .PROJECT_PEGASUS/NLPSeq folder
+run commands: 
 ```
 $ python manage.py runserver
 ```
 <br>
 The webpage will start at django server with private address at: http://127.0.0.1:8000/
 
-#### HomePage: (Where you can enter a url or plain text for summarization)
-
-![image](https://user-images.githubusercontent.com/71624659/135486669-cd4c9943-7c32-4d28-91b7-45d1f114ea48.png)
-
-#### Result Page: (With Texts input by user, and the Abstractive summary with Pegasus)
-![image](https://user-images.githubusercontent.com/71624659/135486817-1ee2b1c3-98d0-4e64-98ea-50cffaec0615.png)
-
-#### Result Page: (with Genisum summarization function for comparison)
-![image](https://user-images.githubusercontent.com/71624659/135487076-df8a40ab-3103-4042-a077-c2895cae900e.png)
 
 <br>
 
