@@ -34,6 +34,7 @@ To see the working demo, click on the links
 ![image](https://user-images.githubusercontent.com/71624659/138288463-570ae28b-fdb6-4bc8-bb65-37519c7e2799.png)
 
 #### Text Summarizer page: (Where the model takes user input and start summarization)
+![image](https://user-images.githubusercontent.com/71624659/138289400-fb5f01e2-7e91-41e2-92bb-a6e88a2917f8.png)
 ![image](https://user-images.githubusercontent.com/71624659/138288722-f0a499f4-7f89-4669-a35f-7c3a4700541f.png)
 
 #### Result Page: (Will display Texts input by user, Abstractive and Extractive summaries)
