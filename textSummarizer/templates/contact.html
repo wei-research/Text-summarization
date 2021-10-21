@@ -1,0 +1,50 @@
+
+{%extends "index.html" %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top"> -->
+  <!-- <a class="navbar-brand" href="#">Text Summarizer</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> -->
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+       <div class="collapse navbar-collapse" id="navbarsExampleDefault">   
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/"> Home</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link"  href="/model"> Text Summarizer <span class="sr-only"></span></a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link active" href="/contact"> Contact </a>
+              </li>
+          </ul>
+
+          <!-- <form class="form-inline my-2 my-lg-0"> -->
+          <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+      </div>    
+</nav>
+
+<main role="main" class="container" style="padding-top: 5%">
+    <div class="jumbotron">
+      <h2>Contact</h2>
+      <p class="lead">This website is a Deliverable of UTS 32933 Research Project, Spring 2021 </p>
+      <p class="lead">For more information please follow me on Github: vikalaw </p>
+      <a class="btn btn-md btn-info" href="https://github.com/absummarization/absummarization.github.io " target="_blank" role="button">Link to project repository</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        <span class="text-muted">*Copy Right Reserved.  Please contact me for more information</span>
+    </div>
+  </footer>
+{% endblock content %}

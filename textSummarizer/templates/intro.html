@@ -1,0 +1,87 @@
+
+  {%extends "index.html" %}
+
+  {% block content %}
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top"> -->
+    <!-- <a class="navbar-brand" href="#">Text Summarizer</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">   
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="/model"> Text Summarizer <span class="sr-only"></span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact"> Contact </a>
+                </li>
+            </ul>
+
+            <!-- <form class="form-inline my-2 my-lg-0"> -->
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+              </form>
+
+        </div>    
+</nav>
+
+<main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="display-4"><br>Welcome to Text Summarizer!</h2>
+        <br>
+        <h4>What is it?</h4>
+
+        <p><span>Text Summarization </span> is a task of generating a short and concise summary that captures the salient ideas of the source text. 
+            <br>
+            This is a tool to address the ever-growing amount of text data available online to both better help discover most relevant information and to consume relevant information faster.
+            <br><br>
+            In general, there are two different approaches for automatic summarization: Abstractive summarization and Extractive summarization. <br>
+
+            <!-- <span class = "font-weight-bold"> </span> -->
+            This model will present both results for your comparison. 
+
+            <h4>How to use?</h4>
+            By simply inputting a website URL or plain text, you will get a one-sentence abstractive summary of what the content is about with the Google Pegasus pretrained model on XSUM dataset.
+            An extractive summary will also be displayed. 
+                  
+            <br><br>Try the Summarizer now:</p>
+        <p><a class="btn btn-info btn-lg" href="/model" role="button">Launch the model &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container" >
+        <div class="row">
+        <div class="col-9" style="padding-bottom: 2rem; ">
+          <h5><span style = "color: #5bc0de">Further Reading - Google Pegasus</h5></span>
+          <p>The abstractive summariation is using open sourced pre-trained Sequence-to-Sequence architecture with Extracted Gap-sentences, known as PEGASUS.
+            The novelty of this architecture lies in its self-supervised pre-training objective
+            Please check the original blog for more details.
+          </p>
+          <p><a class="btn btn-secondary" href="https://ai.googleblog.com/2020/06/pegasus-state-of-art-model-for.html" target="_blank" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+    <footer class="footer">
+      <div class="container">
+          <span class="text-muted">*Copy Right Reserved.  Please contact me for more information</span>
+      </div>
+  </footer>
+
+{% endblock content %}
