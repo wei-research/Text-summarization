@@ -1,37 +1,78 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/vikalaw/abtest.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Abstractive Text Summarization 
 
-### Markdown
+Deliverable of UTS 32933 Research Project, Spring 2021
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Web Application: [Link](https://absumapp.herokuapp.com/)
 
-```markdown
-Syntax highlighted code block
+Supervisor: [Professor. Wei Liu](https://www.uts.edu.au/staff/wei.liu)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## What is it
 
-1. Numbered
-2. List
+- Abstractive Text Summarization is a task of generating a short and concise summary that captures the salient ideas of the source text. Different from extractive summarization, the generated summaries potentially contain new phrases and sentences that may not appear in the source text.
 
-**Bold** and _Italic_ and `Code` text
+- The Automatic Text Summarizer is a tool to address the ever-growing amount of text data available online to both better help discover relevant information and to consume relevant information faster.
 
-[Link](url) and ![Image](src)
+## The model
+- The abstractive summarization model is pre-trained with Extracted Gap-sentences for Abstractive SUmmarization Sequence-to-sequence models, known as PEGASUS, which uses self-supervised objective Gap Sentences Generation (GSG) to train a transformer encoder-decoder model. The paper can be found on [arXiv](https://arxiv.org/abs/1912.08777). ICML 2020 accepted. Hugging Face's API is used for inference on the web page of pegasus model fine tuned on XSUM dataset.
+
+- For comparision of different summarization approaches, genism summarization model is added to compare the outputs.
+
+
+## Demo
+To see the working demo, click on the links
+- <a href="#" target="_blank">The video on Demo will be updated shortly</a>
+
+## Dependancies
+
+The automatic text summarizer is deployed with Django framework. 
+
+To run the model on your own device, you need to install the following dependancies in your virtual enrivonment: 
+* Django == 2.2
+* python >3.6
+* gensim
+* beautifulsoup4
+
+
+## Use Tex Summarizer on Web page
+
+###  Step 1. Start Django
+
+* Navigate to .PROJECT_PEGASUS/NLPSeq folder
+* run commands: 
 ```
+$ python manage.py runserver
+```
+<br>
+The webpage will start at django server with private address at: http://127.0.0.1:8000/
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### HomePage: (Where you can enter a url or plain text for summarization)
 
-### Jekyll Themes
+![image](https://user-images.githubusercontent.com/71624659/135486669-cd4c9943-7c32-4d28-91b7-45d1f114ea48.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vikalaw/abtest.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Result Page: (With Texts input by user, and the Abstractive summary with Pegasus)
+![image](https://user-images.githubusercontent.com/71624659/135486817-1ee2b1c3-98d0-4e64-98ea-50cffaec0615.png)
 
-### Support or Contact
+#### Result Page: (with Genisum summarization function for comparison)
+![image](https://user-images.githubusercontent.com/71624659/135487076-df8a40ab-3103-4042-a077-c2895cae900e.png)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<br>
+
+## Contact 
+
+If you have any queries, feel free to create an issue or contact me via the email address 14013635@student.uts.edu.au
+
+## Reference
+If you use this code or these models, please cite the following paper:
+```
+@misc{zhang2019pegasus,
+    title={PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization},
+    author={Jingqing Zhang and Yao Zhao and Mohammad Saleh and Peter J. Liu},
+    year={2019},
+    eprint={1912.08777},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
