@@ -31,11 +31,13 @@ To see the working demo, click on the links
 
 #### HomePage: (Introduction of the web application and how it works)
 
+![image](https://user-images.githubusercontent.com/71624659/138288463-570ae28b-fdb6-4bc8-bb65-37519c7e2799.png)
 
 #### Text Summarizer page: (Where the model takes user input and start summarization)
+![image](https://user-images.githubusercontent.com/71624659/138288722-f0a499f4-7f89-4669-a35f-7c3a4700541f.png)
 
 #### Result Page: (Will display Texts input by user, Abstractive and Extractive summaries)
-
+![image](https://user-images.githubusercontent.com/71624659/138288849-47e3de70-63c0-444c-962e-22e48d00f315.png)
 
 <br>
 
