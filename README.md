@@ -11,21 +11,19 @@ Supervisor: [Professor. Wei Liu](https://www.uts.edu.au/staff/wei.liu)
 
 ## What is it
 
-- Abstractive Text Summarization is a task of generating a short and concise summary that captures the salient ideas of the source text. Different from extractive summarization, the generated summaries potentially contain new phrases and sentences that may not appear in the source text.
+- Abstractive Text Summarization is a task of generating a short and concise summary that captures the salient ideas of the source text. The generated abstractive summaries involves paraphrasing, which potentially contain new phrases and sentences that may not appear in the source text.
+- Extractive summarization creates the summaries from phrases or sentences in the source document(s).
 
-- The Automatic Text Summarizer is a tool to address the ever-growing amount of text data available online to both better help discover relevant information and to consume relevant information faster.
+- The Text Summarizer is a tool to address the ever-growing amount of text data available online to both better help discover relevant information and to consume relevant information faster.
 
 ## The model
-- The abstractive summarization model is pre-trained with Extracted Gap-sentences for Abstractive SUmmarization Sequence-to-sequence models, known as PEGASUS, which uses self-supervised objective Gap Sentences Generation (GSG) to train a transformer encoder-decoder model. The paper can be found on [arXiv](https://arxiv.org/abs/1912.08777). ICML 2020 accepted. Hugging Face's API is used for inference on the web page of pegasus model fine tuned on XSUM dataset.
+- The abstractive summarization model is pre-trained with Extracted Gap-sentences for Abstractive SUmmarization Sequence-to-sequence models, known as PEGASUS, which uses self-supervised objective Gap Sentences Generation (GSG) to train a transformer encoder-decoder model. The paper can be found on [arXiv](https://arxiv.org/abs/1912.08777). ICML 2020 accepted. Hugging Face's API is used for inference on the web page of pegasus model trained on XSUM dataset.
 
-- For comparision of different summarization approaches, genism summarization model is added to compare the outputs.
-
+- For comparision of different summarization approaches, Genism extractive summarization model (TextRank Algorithm) is added to compare the outputs. 
 
 ## Demo
 To see the working demo, click on the links
 - <a href="#" target="_blank">The video on Demo will be updated shortly</a>
-
-
 
 ## Overview of the Web Application
 
