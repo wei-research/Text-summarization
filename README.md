@@ -52,7 +52,7 @@ To run and modify the model on your own device, you need to install the followin
 * gensim
 * beautifulsoup4
 
-Navigate to .PROJECT_PEGASUS/NLPSeq folder
+Under the main directory:
 run commands: 
 ```
 $ python manage.py runserver
